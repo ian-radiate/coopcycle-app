@@ -1,4 +1,4 @@
-package fr.coopcycle;
+package com.thelocalcoop.delivery;
 
 import com.wix.detox.Detox;
 import com.wix.detox.config.DetoxConfig;
@@ -23,7 +23,7 @@ public class DetoxTest {
         DetoxConfig detoxConfig = new DetoxConfig();
         detoxConfig.idlePolicyConfig.masterTimeoutSec = 90;
         detoxConfig.idlePolicyConfig.idleResourceTimeoutSec = 60;
-        detoxConfig.rnContextLoadTimeoutSec = (fr.coopcycle.BuildConfig.DEBUG ? 180 : 60);
+        detoxConfig.rnContextLoadTimeoutSec = (com.thelocalcoop.delivery.BuildConfig.DEBUG ? 180 : 60);
 
         Detox.runTests(mActivityRule, detoxConfig);
     }

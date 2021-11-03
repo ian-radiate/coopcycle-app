@@ -1,6 +1,6 @@
-package fr.coopcycle;
+package com.thelocalcoop.delivery;
 
-import fr.coopcycle.generated.BasePackageList;
+import com.thelocalcoop.delivery.generated.BasePackageList;
 
 import android.content.Context;
 import android.content.Intent;
@@ -102,7 +102,7 @@ public class MainApplication extends MultiDexApplication implements ReactApplica
          We use reflection here to pick up the class that initializes Flipper,
         since Flipper library is not available in release mode
         */
-        Class<?> aClass = Class.forName("fr.coopcycle.ReactNativeFlipper");
+        Class<?> aClass = Class.forName("com.thelocalcoop.delivery.ReactNativeFlipper");
         aClass
             .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
             .invoke(null, context, reactInstanceManager);

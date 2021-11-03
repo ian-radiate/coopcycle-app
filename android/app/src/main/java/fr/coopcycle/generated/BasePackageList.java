@@ -1,4 +1,4 @@
-package fr.coopcycle.generated;
+package com.thelocalcoop.delivery.generated;
 
 import java.util.Arrays;
 import java.util.List;
