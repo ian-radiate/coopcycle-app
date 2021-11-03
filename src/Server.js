@@ -24,7 +24,7 @@ const fetchRemote = () => {
 
   return new Promise((resolve, reject) => {
     try {
-      axios.get('https://coopcycle.org/coopcycle.json')
+      axios.get('https://nef.eco/cities.json')
         .then((response) => resolve(response.data))
         .catch(() => resolve([]))
     } catch (e) {
