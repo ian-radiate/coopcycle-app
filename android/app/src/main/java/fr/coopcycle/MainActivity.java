@@ -1,4 +1,4 @@
-package fr.coopcycle;
+package com.thelocalcoop.delivery;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;

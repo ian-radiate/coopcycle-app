@@ -22,4 +22,4 @@
 -keep class com.transistorsoft.rnbackgroundfetch.HeadlessTask { *; }
 
 # https://github.com/luggit/react-native-config#problems-with-proguard
--keep class fr.coopcycle.BuildConfig { *; }
+-keep class com.thelocalcoop.delivery.BuildConfig { *; }
