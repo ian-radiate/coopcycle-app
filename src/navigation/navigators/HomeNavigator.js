@@ -19,7 +19,7 @@ const MainNavigator = () => (
       name="Home"
       component={ ConfigureServer }
       options={{
-        title: 'CoopCycle',
+        title: 'Zip Co-op',
         headerBackTitle: null,
       }}
     />
