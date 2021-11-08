@@ -1,0 +1,9 @@
+//
+//  Config.xcconfig
+//  CoopCycle
+//
+//  Created by Sara Bajor on 11/7/21.
+//  Copyright © 2021 CoopCycle. All rights reserved.
+//
+
+#include? "tmp.xcconfig"
