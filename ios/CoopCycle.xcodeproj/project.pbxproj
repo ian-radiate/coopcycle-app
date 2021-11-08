@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* CoopCycleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CoopCycleTests.m */; };
+		03E26ECC27389B8900F9992F /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 03E26ECB27389B8800F9992F /* Config.xcconfig */; };
 		0FFE751F8FDF4AFD96542CB7 /* RobotoMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5654BC430BE34AEAAF13CA9E /* RobotoMono-Bold.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -50,6 +51,7 @@
 		00E356EE1AD99517003FC87E /* CoopCycleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoopCycleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* CoopCycleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoopCycleTests.m; sourceTree = "<group>"; };
+		03E26ECB27389B8800F9992F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		10EDB540CFB1C1E91E996FF0 /* Pods-CoopCycle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoopCycle.release.xcconfig"; path = "Target Support Files/Pods-CoopCycle/Pods-CoopCycle.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* The Local Zip Coop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Local Zip Coop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CoopCycle/AppDelegate.h; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				03E26ECB27389B8800F9992F /* Config.xcconfig */,
 				845246CE2344832500A3A1B2 /* GoogleService-Info.plist */,
 				FA2E390B2225DD32002BBCB4 /* Empty.swift */,
 				FAC644352166467B00D1DA52 /* misstickle__indian_bell_chime.wav */,
@@ -265,6 +268,7 @@
 				F202157B20882C8E2EED48A5 /* [CP-User] [RNFB] Core Configuration */,
 				20C2B32A772B910869BC64E5 /* [CP-User] [RNFB] Crashlytics Configuration */,
 				27AF0BD9BC90723218C8C111 /* [CP] Embed Pods Frameworks */,
+				03E26ECD27389CF200F9992F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -365,6 +369,7 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				845246CF2344832500A3A1B2 /* GoogleService-Info.plist in Resources */,
+				03E26ECC27389B8900F9992F /* Config.xcconfig in Resources */,
 				84E9E2D424E3EA5B00740A6D /* Infoplist.strings in Resources */,
 				FAC644362166467C00D1DA52 /* misstickle__indian_bell_chime.wav in Resources */,
 				E4A95D69133B4C1B8FD304BA /* Raleway-Regular.ttf in Resources */,
@@ -398,6 +403,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export SENTRY_PROPERTIES=sentry.properties\nexport EXTRA_PACKAGER_ARGS=\"--sourcemap-output $DERIVED_FILE_DIR/main.jsbundle.map\"\nexport NODE_BINARY=node\n../node_modules/@sentry/cli/bin/sentry-cli react-native xcode ../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		03E26ECD27389CF200F9992F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
 		};
 		1C399DE3A5D93B6E9DB2EE8B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -774,6 +797,7 @@
 		};
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03E26ECB27389B8800F9992F /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -830,6 +854,7 @@
 		};
 		83CBBA211A601CBA00E9B192 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03E26ECB27389B8800F9992F /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;

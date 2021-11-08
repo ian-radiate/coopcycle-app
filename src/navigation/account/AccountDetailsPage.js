@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+  import React, { Component } from 'react'
 import { InteractionManager } from 'react-native'
 import {
-  Center,
+  Container,
   FormControl, Input,
 } from 'native-base'
 import { connect } from 'react-redux'
@@ -22,7 +22,7 @@ class AccountDetailsPage extends Component {
     const { email, username } = this.props
 
     return (
-      <Center flex={1} px="2">
+      <Container flex={1} top="10" left="3">
         { username ? (
           <FormControl disabled>
             <FormControl.Label>{this.props.t('USERNAME')}</FormControl.Label>
@@ -35,7 +35,7 @@ class AccountDetailsPage extends Component {
             <Input disabled placeholder={ email } />
           </FormControl>
         ) : null }
-      </Center>
+      </Container>
     )
   }
 }
